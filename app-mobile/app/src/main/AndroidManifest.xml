@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permisos de la aplicación -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/DarkTheme.EcoRuta"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".interfaces.ReportsUI"
+            android:exported="false" />
+        <activity
+            android:name=".interfaces.DNIValidationUI"
+            android:exported="false"
+            android:label="@string/title_activity_dni_validation_ui"
+            android:theme="@style/DarkTheme.EcoRuta" /> <!-- Actividades y componentes -->
+        <activity
+            android:name=".interfaces.SettingsUI"
+            android:exported="false"
+            android:label="@string/title_activity_settings_ui" />
+        <activity
+            android:name=".interfaces.MapaRutasUI"
+            android:exported="false" />
+        <activity
+            android:name=".interfaces.GenerateReportUI"
+            android:exported="false" />
+        <activity
+            android:name=".interfaces.RoutesUI"
+            android:exported="false" />
+        <activity
+            android:name=".interfaces.DriverMainMenuUI"
+            android:exported="false" />
+        <activity
+            android:name=".interfaces.ResetPasswordUI"
+            android:exported="false" />
+        <activity
+            android:name=".interfaces.ShoppingUI"
+            android:exported="false"
+            android:label="@string/title_activity_shop"
+            android:theme="@style/DarkTheme.EcoRuta.NoActionBar" />
+        <activity
+            android:name=".interfaces.MapUI"
+            android:exported="false"
+            android:label="@string/title_activity_maps"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".interfaces.MainMenuUI"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".interfaces.RegisterUserUI"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".interfaces.TransitionUI"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".interfaces.LoginUI"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".interfaces.InitialLoadingUI"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Configuración del FileProvider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.qromarck.reciperu.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- Definir el archivo de rutas del proveedor -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".Utilities.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/GOOGLE_MAPS_KEY" />
+    </application>
+
+</manifest>

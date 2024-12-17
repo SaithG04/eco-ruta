@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Navigation IDs for MainMenuUI -->
+    <item type="id" name="nav_miPerfil" />
+    <item type="id" name="nav_reportar" />
+    <item type="id" name="nav_mis_reportes" />
+    <item type="id" name="nav_rutas" />
+    <item type="id" name="nav_cerrarSesion" />
+    <item type="id" name="nav_configuracion" />
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_miPerfil"
+        android:title="Mi cuenta"
+        android:titleTextColor="#FFFFFF"/>
+    <item
+        android:id="@+id/nav_reportar"
+        android:title="Reportar contaminación"
+        android:titleTextColor="#FFFFFF"/>
+    <item
+        android:id="@+id/nav_mis_reportes"
+        android:title="Ver mis reportes"
+        android:titleTextColor="#FFFFFF"/>
+    <item
+        android:id="@+id/nav_rutas"
+        android:title="Ver rutas"
+        android:titleTextColor="#FFFFFF"/>
+    <item
+        android:id="@+id/nav_configuracion"
+        android:title="Configuración"
+        android:titleTextColor="#FFFFFF"/>
+    <item
+        android:id="@+id/nav_cerrarSesion"
+        android:title="Salir de mi cuenta"
+        android:titleTextColor="#FFFFFF"/>
+
+</menu>

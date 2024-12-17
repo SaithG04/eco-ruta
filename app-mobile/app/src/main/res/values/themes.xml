@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="LightTheme.EcoRuta" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/greenR</item>
+    </style>
+
+    <style name="DarkTheme.EcoRuta" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Otros atributos del tema -->
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/greenR</item>
+        <!-- <item name="android:windowBackground">@drawable/reciperulogo</item> -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/material_on_background_emphasis_medium</item>
+    </style>
+
+    <style name="DarkTheme.EcoRuta.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DarkTheme.EcoRuta.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="DarkTheme.EcoRuta.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

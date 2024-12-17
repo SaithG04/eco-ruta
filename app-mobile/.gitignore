@@ -1,0 +1,15 @@
+*.iml
+local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+/app/google-services.json
+/app/assetlinks.json
+/app/src/main/res/values/keys.xml
+/.gradle
+/app/src/test
+README.md
+reciperu.jks

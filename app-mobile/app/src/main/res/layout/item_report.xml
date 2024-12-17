@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título del Reporte -->
+        <TextView
+            android:id="@+id/reportTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reporte Título"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <!-- Descripción del Reporte -->
+        <TextView
+            android:id="@+id/reportDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del reporte"
+            android:textSize="14sp"
+            android:textColor="#555555" />
+
+        <!-- Fecha del Reporte -->
+        <TextView
+            android:id="@+id/reportDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="12sp"
+            android:textColor="#888888" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

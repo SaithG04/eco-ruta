@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interfaces.RoutesUI">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="163dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127"
+        app:srcCompat="@drawable/eco_rutita_rutas" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="119dp"
+        android:text="RUTAS"
+        android:textAlignment="center"
+        android:textColor="#43B849"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        style="@android:style/Widget.Holo.ScrollView"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="1dp">
+
+        <!-- Contenedor principal: LinearLayout vertical -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Producto 1 -->
+
+            <!-- Producto 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgEntradas"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/rutavector" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bello Horizonte - Nestor Martos 2"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4 Oct. | A.H.Fraternidad | A.H.Nestor Martos | Emp. Hernandez | A.P.V 15 Sep. | A.P.V Moroni | A.P.V Primavera | A.P.V Educadores  \n \n Horario: Ma Ju Sa  6:00AM. - 2:30PM."
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnRuta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7DC52B"
+                        android:padding="8dp"
+                        android:text="Ver"
+                        android:textColor="#FFFFFF"
+                        app:iconTint="#7CC429" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgRopa"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/rutavector" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avifap"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="URB. Los Jardines 1era Etapa | A.P.V Jorge Chavez (AVIFAP) | URB. Los Jardines 2da Etapa | A.P.V Los Sauces | A.P.V Los Jazmines Santa Rosa | URB. los Jardines (EXCORPIURA) | A.H. Los Algarrobos  \n \n Horario: Lu Mi Vi  6:00AM. - 2:30PM."
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnRuta2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7DC52B"
+                        android:padding="8dp"
+                        android:text="Ver"
+                        android:textColor="#FFFFFF"
+                        app:iconTint="#7CC429" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Producto 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/rutavector" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Los Algarrobos"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A.H. Los Algarrobos | A.H. 28 julio \n \n Horario: Lu Mi Vi  6:00AM. - 2:30PM."
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnRuta3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7DC52B"
+                        android:padding="8dp"
+                        android:text="Ver"
+                        android:textColor="#FFFFFF"
+                        app:iconTint="#7CC429" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Producto 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/rutavector" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bello Horizonte - Nestor Martos 1"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="URB. Mariscal Tito | URB. El Trebol | Casuarinas | URB. 21 Agosto | URB. Bello Horizonte 1era Etapa | URB. Bello Horizonte 2da Etapa | A.P.V Entel Peru | A.P.V Las Magnolias |  URB. Bancaria II | A.P.V Hrnos Carcamo | A.P.V Los Rosales Avitole \n \n Horario: Lu Mi Vi  6:00AM. - 2:30PM."
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnRuta4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7DC52B"
+                        android:padding="8dp"
+                        android:text="Ver"
+                        android:textColor="#FFFFFF"
+                        app:iconTint="#7CC429" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
